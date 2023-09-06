@@ -34,12 +34,21 @@ namespace Work_with_list
         /// <returns></returns>
         public static List<int> DeleteNumbersFromList(List<int> ints) 
         {
-            for (int index = 0; 25 < index && index < 50; index++)
+            List<int> sortedInts = new List<int>();
+
+            for (int index = 0; index < ints.Count; index++)
             {
-                ints.Remove(index);
+                if (ints[index] >= 25 & ints[index] <= 50)
+                {
+                    ints.RemoveAt(index);
+                }
             }
-                
             return ints;
+        }
+
+        public static void PrintToConsole(List<int> ints)
+        {
+            Console.WriteLine($"Исходный список: {{ {String.Join(" ", ints)} }}");
         }
 
 
@@ -51,12 +60,12 @@ namespace Work_with_list
         {   
             List<int> ints = GenerateNewList(); // Создание нового списка.
 
-            Console.WriteLine($"Исходный список: {{ {String.Join(" ", ints)} }}"); // Вывод списка в консоль.
+            PrintToConsole(ints);
             Console.WriteLine();
 
             List<int> newInts = DeleteNumbersFromList(ints);
 
-            Console.WriteLine($"Новый список: {{ {String.Join(" ", newInts)} }}"); // Вывод списка с удалёнными числами.
+            PrintToConsole(newInts); // Вывод списка с удалёнными числами.
 
             Console.ReadLine();
         }
