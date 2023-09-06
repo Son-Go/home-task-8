@@ -1,7 +1,6 @@
 C:\Users\gorel\source\repos\home-task-8\Work_with_list\Work_with_list\bin\Debug\Work_with_list.exe.config
 C:\Users\gorel\source\repos\home-task-8\Work_with_list\Work_with_list\bin\Debug\Work_with_list.exe
 C:\Users\gorel\source\repos\home-task-8\Work_with_list\Work_with_list\bin\Debug\Work_with_list.pdb
-C:\Users\gorel\source\repos\home-task-8\Work_with_list\Work_with_list\bin\Debug\Newtonsoft.Json.dll
 C:\Users\gorel\source\repos\home-task-8\Work_with_list\Work_with_list\bin\Debug\Newtonsoft.Json.xml
 C:\Users\gorel\source\repos\home-task-8\Work_with_list\Work_with_list\obj\Debug\Work_with_list.csproj.AssemblyReference.cache
 C:\Users\gorel\source\repos\home-task-8\Work_with_list\Work_with_list\obj\Debug\Work_with_list.csproj.CoreCompileInputs.cache

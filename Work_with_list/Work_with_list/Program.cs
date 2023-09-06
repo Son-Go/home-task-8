@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Work_with_list
 {
@@ -41,6 +38,8 @@ namespace Work_with_list
                 if (ints[index] >= 25 & ints[index] <= 50)
                 {
                     ints.RemoveAt(index);
+
+                    index--;
                 }
             }
             return ints;
