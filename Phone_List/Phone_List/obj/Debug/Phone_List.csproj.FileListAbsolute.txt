@@ -1,0 +1,7 @@
+C:\Users\gorel\source\repos\home-task-8\Phone_List\Phone_List\obj\Debug\Phone_List.csproj.AssemblyReference.cache
+C:\Users\gorel\source\repos\home-task-8\Phone_List\Phone_List\obj\Debug\Phone_List.csproj.CoreCompileInputs.cache
+C:\Users\gorel\Source\Repos\home-task-8\Phone_List\Phone_List\bin\Debug\Phone_List.exe.config
+C:\Users\gorel\Source\Repos\home-task-8\Phone_List\Phone_List\bin\Debug\Phone_List.exe
+C:\Users\gorel\Source\Repos\home-task-8\Phone_List\Phone_List\bin\Debug\Phone_List.pdb
+C:\Users\gorel\Source\Repos\home-task-8\Phone_List\Phone_List\obj\Debug\Phone_List.exe
+C:\Users\gorel\Source\Repos\home-task-8\Phone_List\Phone_List\obj\Debug\Phone_List.pdb
