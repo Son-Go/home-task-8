@@ -1,0 +1,7 @@
+C:\Users\gorel\source\repos\home-task-8\Write_Book\Write_Book\bin\Debug\Write_Book.exe.config
+C:\Users\gorel\source\repos\home-task-8\Write_Book\Write_Book\bin\Debug\Write_Book.exe
+C:\Users\gorel\source\repos\home-task-8\Write_Book\Write_Book\bin\Debug\Write_Book.pdb
+C:\Users\gorel\source\repos\home-task-8\Write_Book\Write_Book\obj\Debug\Write_Book.csproj.AssemblyReference.cache
+C:\Users\gorel\source\repos\home-task-8\Write_Book\Write_Book\obj\Debug\Write_Book.csproj.CoreCompileInputs.cache
+C:\Users\gorel\source\repos\home-task-8\Write_Book\Write_Book\obj\Debug\Write_Book.exe
+C:\Users\gorel\source\repos\home-task-8\Write_Book\Write_Book\obj\Debug\Write_Book.pdb
