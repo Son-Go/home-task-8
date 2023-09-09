@@ -1,0 +1,7 @@
+C:\Users\gorel\source\repos\home-task-8\Check_Repeat\Check_Repeat\bin\Debug\Check_Repeat.exe.config
+C:\Users\gorel\source\repos\home-task-8\Check_Repeat\Check_Repeat\bin\Debug\Check_Repeat.exe
+C:\Users\gorel\source\repos\home-task-8\Check_Repeat\Check_Repeat\bin\Debug\Check_Repeat.pdb
+C:\Users\gorel\source\repos\home-task-8\Check_Repeat\Check_Repeat\obj\Debug\Check_Repeat.csproj.AssemblyReference.cache
+C:\Users\gorel\source\repos\home-task-8\Check_Repeat\Check_Repeat\obj\Debug\Check_Repeat.csproj.CoreCompileInputs.cache
+C:\Users\gorel\source\repos\home-task-8\Check_Repeat\Check_Repeat\obj\Debug\Check_Repeat.exe
+C:\Users\gorel\source\repos\home-task-8\Check_Repeat\Check_Repeat\obj\Debug\Check_Repeat.pdb
