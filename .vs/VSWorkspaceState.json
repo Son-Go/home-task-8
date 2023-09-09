@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Phone_List",
+    "\\Phone_List\\Phone_List",
+    "\\Work_with_list",
+    "\\Work_with_list\\Work_with_list"
   ],
-  "SelectedNode": "\\Work_with_list",
+  "SelectedNode": "\\Phone_List\\Phone_List\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

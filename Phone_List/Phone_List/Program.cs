@@ -8,32 +8,72 @@ namespace Phone_List
 {
     internal class Program
     {
+
+        static Dictionary<string, string> _myDict = new Dictionary<string, string>();
+
         public static Dictionary<string, string> FindFone(Dictionary<string, string> dict)
         {
+            dict = _myDict;
 
-            return dict;
+            Console.Write("Номер телефона: ");
+            string searchNumber = Console.ReadLine();
+
+            string owner;
+
+            if (_myDict.TryGetValue(searchNumber, out owner))
+            {
+                Console.WriteLine($"Владелец номера телефона {searchNumber}: {owner}");
+
+                return _myDict;
+            }
+            else
+            {
+                Console.WriteLine($"Владелец номера телефона {searchNumber} не найден.");
+
+                return null;
+            }
         }
 
         public static Dictionary<string, string> PhoneListAdd(Dictionary<string, string> dict)
         {
             string fio;
             string phoneNumber;
+            bool flag = true;
+            string choice, emptyString = "";
 
-            Console.Write("Введите ФИО: ");
-            fio = Console.ReadLine();
-
-            Console.Write("Введите номер телефона: ");
-            phoneNumber = Console.ReadLine();
-
-            dict.Add(phoneNumber, fio);
-            Console.WriteLine("Данные сохранены!!");
-
-            foreach (var item in dict)
+            while (flag)
             {
-                Console.WriteLine($"Key: {item.Key}, Value: {item.Value}");
-            }
+                Console.Write("Введите ФИО: ");
+                fio = Console.ReadLine();
 
-            Console.WriteLine("Что бы закончить ввод, введите пустую строку.");
+                Console.Write("Введите номер телефона: ");
+                phoneNumber = Console.ReadLine();
+
+                if (phoneNumber.Length == 11)
+                {
+                    dict.Add(phoneNumber, fio);
+                    Console.WriteLine("Данные сохранены!!");
+                }
+                else
+                {
+                    Console.WriteLine("Длина номера телефона должна быть равна 11");
+                }
+
+                foreach (var item in dict)
+                {
+                    Console.WriteLine($"Key: {item.Key}, Value: {item.Value}");
+                }
+
+                Console.WriteLine("Что бы закончить ввод, введите пустую строку.");
+
+                choice = Console.ReadLine();
+
+                if (choice == emptyString)
+                {
+                    flag = false;
+                    break;
+                }
+            }
 
             return dict;
         }
@@ -41,7 +81,7 @@ namespace Phone_List
         public static void ProgramMenu()
         {
             bool flag = true;
-            string choice, emptyString = "";
+            string choice;
 
             Console.WriteLine("Введите 1, что бы ввести данные в телефонную книжку.");
             Console.WriteLine("Введите 2, что бы закрыть программу.");
@@ -52,19 +92,11 @@ namespace Phone_List
                 Console.WriteLine("Введите команду: ");
                 choice = Console.ReadLine();
 
-                if (choice == emptyString)
-                {
-                    flag = false;
-                    break;
-                }
-
                 switch (choice)
                 {
                     case "1":
                         {
-                            Dictionary<string, string> dict = new Dictionary<string, string>();
-
-                            PhoneListAdd(dict);
+                            PhoneListAdd(_myDict);
                             break;
                         }
                     case "2":
@@ -75,14 +107,12 @@ namespace Phone_List
                         }
                     case "3":
                         {
-                            Dictionary<string, string> dict = new Dictionary<string, string>();
-
-                            FindFone(dict);
+                            FindFone(_myDict);
                             break;
                         }
                     default:
                         {
-                            Console.WriteLine("Неизвестная команда!! Введите 1 или 2");
+                            Console.WriteLine("Неизвестная команда!! Введите 1, 2 или 3");
                             break;
                         }
                 }
@@ -91,7 +121,7 @@ namespace Phone_List
 
         static void Main(string[] args)
         {
-            Dictionary<int, string> newDict = new Dictionary<int, string>();
+            Dictionary<string, string> newDict = new Dictionary<string, string>();
 
             ProgramMenu();
         }
